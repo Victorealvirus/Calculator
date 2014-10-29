@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MatrixB"
+            android:label="@string/title_activity_matrix_b" >
+            <intent-filter>
+                <action android:name="com.example.adcomp.calculator.MATRIXB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
