@@ -15,15 +15,15 @@ import android.widget.Toast;
 public class MatrixA extends Activity {
 
 
-    public static int e1;
-    public static int e2;
-    public static int e3;
-    public static int e4;
-    public static int e5;
-    public static int e6;
-    public static int e7;
-    public static int e8;
-    public static int e9;
+    public static float e1;
+    public static float e2;
+    public static float e3;
+    public static float e4;
+    public static float e5;
+    public static float e6;
+    public static float e7;
+    public static float e8;
+    public static float e9;
     boolean emptyString = false;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public class MatrixA extends Activity {
 
     }//oncreate ends
 
-    private int getE1() {
+    private float getE1() {
         EditText temp = (EditText) findViewById(R.id.e1);
         String input = temp.getText().toString();
 
@@ -74,10 +74,10 @@ public class MatrixA extends Activity {
         else
         {
             try {
-                e1 = Integer.parseInt(input);
+                e1 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
-                Toast t = Toast.makeText(this, "Please enter only integers", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
 
@@ -87,7 +87,7 @@ public class MatrixA extends Activity {
 
 
 
-    private int getE2() {
+    private float getE2() {
         EditText temp = (EditText) findViewById(R.id.e2);
         String input = temp.getText().toString();
 
@@ -96,11 +96,11 @@ public class MatrixA extends Activity {
             return 0;
         } else {
             try {
-                e2 = Integer.parseInt(input);
+                e2 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
-                Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
 
@@ -110,7 +110,7 @@ public class MatrixA extends Activity {
     }
 
 
-    private int getE3() {
+    private float getE3() {
         EditText temp = (EditText) findViewById(R.id.e3);
         String input = temp.getText().toString();
         if (input.isEmpty()) {
@@ -118,18 +118,18 @@ public class MatrixA extends Activity {
             return 0;
         } else {
             try {
-                e3 = Integer.parseInt(input);
+                e3 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
-                Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
             return e3;
         }
     }
 
-    private int getE4() {
+    private float getE4() {
         EditText temp = (EditText) findViewById(R.id.e4);
         String input = temp.getText().toString();
         if (input.isEmpty()){
@@ -139,11 +139,11 @@ public class MatrixA extends Activity {
         else
         {
         try{
-            e4 = Integer.parseInt(input);
+            e4 = Float.parseFloat(input);
         }catch (Exception e){
             e.getStackTrace();
 
-            Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+            Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
             t.show();
         }
         return e4;
@@ -151,7 +151,7 @@ public class MatrixA extends Activity {
     }
 
 
-    private int getE5() {
+    private float getE5() {
         EditText temp = (EditText) findViewById(R.id.e5);
         String input = temp.getText().toString();
         if (input.isEmpty()) {
@@ -159,11 +159,11 @@ public class MatrixA extends Activity {
             return 0;
         } else {
             try {
-                e5 = Integer.parseInt(input);
+                e5 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
-                Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
             return e5;
@@ -174,7 +174,7 @@ public class MatrixA extends Activity {
 
 
 
-    private int getE6() {
+    private float getE6() {
         EditText temp = (EditText) findViewById(R.id.e6);
         String input = temp.getText().toString();
         if (input.isEmpty()) {
@@ -182,11 +182,11 @@ public class MatrixA extends Activity {
             return 0;
         } else {
             try {
-                e6 = Integer.parseInt(input);
+                e6 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
-                Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
             return e6;
@@ -196,7 +196,7 @@ public class MatrixA extends Activity {
 
 
 
-    private int getE7() {
+    private float getE7() {
         EditText temp = (EditText) findViewById(R.id.e7);
         String input = temp.getText().toString();
         if (input.isEmpty()) {
@@ -204,11 +204,11 @@ public class MatrixA extends Activity {
             return 0;
         } else {
             try {
-                e7 = Integer.parseInt(input);
+                e7 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
-                Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
             return e7;
@@ -217,7 +217,7 @@ public class MatrixA extends Activity {
     }
 
 
-    private int getE8() {
+    private float getE8() {
         EditText temp = (EditText) findViewById(R.id.e8);
         String input = temp.getText().toString();
         if (input.isEmpty()) {
@@ -225,11 +225,11 @@ public class MatrixA extends Activity {
             return 0;
         } else {
             try {
-                e8 = Integer.parseInt(input);
+                e8 = Float.parseFloat(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
-                Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+                Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
                 t.show();
             }
             return e8;
@@ -238,7 +238,7 @@ public class MatrixA extends Activity {
     }
 
 
-    private int getE9() {
+    private float getE9() {
         EditText temp = (EditText) findViewById(R.id.e9);
         String input = temp.getText().toString();
         if (input.isEmpty()){
@@ -248,11 +248,11 @@ public class MatrixA extends Activity {
         else
         {
         try{
-            e9 = Integer.parseInt(input);
+            e9 = Float.parsefloat(input);
         }catch (Exception e){
             e.getStackTrace();
 
-            Toast t = Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT);
+            Toast t = Toast.makeText(this, "Please enter numbers only", Toast.LENGTH_SHORT);
             t.show();
         }
         return e9;
