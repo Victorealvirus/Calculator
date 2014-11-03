@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -13,6 +15,7 @@ public class MatrixB extends Activity {
 
     public static int e1;
     public static int e2;
+    public static int e3;
     public static int e4;
     public static int e5;
     public static int e6;
@@ -54,7 +57,7 @@ public class MatrixB extends Activity {
             return 0;
         } else {
             try {
-                e1 = Integer.parseInt(input);
+                e2 = Integer.parseInt(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
@@ -87,7 +90,6 @@ public class MatrixB extends Activity {
         }
     }
 
-    public static int e3;
 
     private int getE4() {
         EditText temp = (EditText) findViewById(R.id.e4);
@@ -226,33 +228,37 @@ public class MatrixB extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matrix_b);
 
-//        EditText abc = (EditText) findViewById(R.id.e1);
 
-  //      abc.setText(Integer.toString(MainScreen.e1));
+        Button goB = (Button) findViewById(R.id.axb);
+        goB.setOnClickListener(new View.OnClickListener() {
 
-        getE1();
-        getE2();
-        getE3();
-        getE4();
-        getE5();
-        getE6();
-        getE7();
-        getE8();
-        getE9();
+            public void onClick(View view) {
 
-        if(emptyString == true)
-        {
-            Toast t = Toast.makeText(getBaseContext() , "Please enter all values to continue!", Toast.LENGTH_LONG);
-            t.show();
-            emptyString = false;
-        }
-        else{
- //           Intent matB = new Intent("com.example.adcomp.calculator.MATRIXB");
- //           startActivity(matB);
-        }
+                getE1();
+                getE2();
+                getE3();
+                getE4();
+                getE5();
+                getE6();
+                getE7();
+                getE8();
+                getE9();
 
+                if(emptyString == true)
+                {
+                    Toast t = Toast.makeText(getBaseContext() , "Please enter all values to continue!", Toast.LENGTH_LONG);
+                    t.show();
+                    emptyString = false;
+                }
+                else{
+                    Intent mul = new Intent("com.example.adcomp.calculator.MULTIPLIEDMATRIX");
+                    startActivity(mul);
+                }
 
-    }
+            }
+        });
+
+    }//oncreate ends
 
 
 

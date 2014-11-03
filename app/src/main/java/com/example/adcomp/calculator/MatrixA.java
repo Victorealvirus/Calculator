@@ -8,14 +8,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainScreen extends Activity {
+public class MatrixA extends Activity {
 
 
     public static int e1;
     public static int e2;
+    public static int e3;
     public static int e4;
     public static int e5;
     public static int e6;
@@ -24,9 +26,46 @@ public class MainScreen extends Activity {
     public static int e9;
     boolean emptyString = false;
 
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_screen);
+
+        Button goB = (Button) findViewById(R.id.gotoB);
+        goB.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+
+
+                getE1();
+                getE2();
+                getE3();
+                getE4();
+                getE5();
+                getE6();
+                getE7();
+                getE8();
+                getE9();
+
+                if(emptyString == true)
+                {
+                    Toast t = Toast.makeText(getBaseContext() , "Please enter all values to continue!", Toast.LENGTH_LONG);
+                    t.show();
+                    emptyString = false;
+                }
+                else{
+                    Intent matB = new Intent("com.example.adcomp.calculator.MATRIXB");
+                    startActivity(matB);
+                }
+
+            }
+        });
+
+    }//oncreate ends
+
     private int getE1() {
         EditText temp = (EditText) findViewById(R.id.e1);
-         String input = temp.getText().toString();
+        String input = temp.getText().toString();
 
         if (input.isEmpty()){
             emptyString = true;
@@ -57,7 +96,7 @@ public class MainScreen extends Activity {
             return 0;
         } else {
             try {
-                e1 = Integer.parseInt(input);
+                e2 = Integer.parseInt(input);
             } catch (Exception e) {
                 e.getStackTrace();
 
@@ -89,8 +128,6 @@ public class MainScreen extends Activity {
             return e3;
         }
     }
-
-    public static int e3;
 
     private int getE4() {
         EditText temp = (EditText) findViewById(R.id.e4);
@@ -224,39 +261,7 @@ public class MainScreen extends Activity {
     }
 
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
 
-        Button goB = (Button) findViewById(R.id.gotoB);
-        goB.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View view) {
-
-                getE1();
-                getE2();
-                getE3();
-                getE4();
-                getE5();
-                getE6();
-                getE7();
-                getE8();
-                getE9();
-
-                if(emptyString == true)
-                {
-                    Toast t = Toast.makeText(getBaseContext() , "Please enter all values to continue!", Toast.LENGTH_LONG);
-                    t.show();
-                }
-                else{
-                    Intent matB = new Intent("com.example.adcomp.calculator.MATRIXB");
-                    startActivity(matB);
-                }
-
-            }
-        });
-
-    }
 
 
 
