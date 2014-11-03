@@ -6,7 +6,7 @@
     <string name="empty_string"></string>
     <string name="button1text">MATRIX -> B</string>
     <string name="button2text">A X B -></string>
-    <string name="test">0</string>
+    <string name="test">Z</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_matrix_b">MatrixB</string>
     <string name="hello_world">Hello world!</string>
