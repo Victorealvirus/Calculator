@@ -18,55 +18,55 @@
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e1"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e2"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e3"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e4"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e5"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e6"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e7"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e8"/>
         <EditText
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/test"
             android:id="@+id/e9"/>
 

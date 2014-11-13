@@ -15,65 +15,62 @@
         android:columnCount="3"
         android:layout_gravity="center"
         >
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e1"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e2"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e3"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e4"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e5"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e6"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e7"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e8"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/test"
+        android:id="@+id/e9"/>
 
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e1"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e2"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e3"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e4"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e5"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e6"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e7"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e8"/>
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:inputType="number"
-            android:hint="@string/test"
-            android:id="@+id/e9"/>
-
-    </GridLayout>
-
-
+</GridLayout>
     <TextView
         android:text="@string/info_label"
         android:layout_width="match_parent"
